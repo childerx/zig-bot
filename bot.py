@@ -184,7 +184,7 @@ async def error_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     await update.message.reply_text("An error occurred while processing your request. Please try again later.")
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token('6828345237:AAFjNS-P9Iv62OovrIRnCWk5vFljiG0YRuo').build()
+    application = ApplicationBuilder().token('BOT_TOKEN').build()
 
     start_handler = CommandHandler('start', start)
     application.add_handler(start_handler)
